@@ -1,0 +1,32 @@
+body {
+  background-color: rgb(25, 25, 25);
+  color: white;
+  font-family: Arial;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.move-icon {
+  height: 50px;
+}
+
+.moveBtn {
+  background-color: transparent;
+  border-style: solid;
+  border-color: white;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border-width: 3px;
+  margin-right: 10px;
+  cursor: pointer;
+
+  &:hover {
+    /*last value of this rgb is the opacity*/
+    background-color: rgba(251, 251, 251, 0.263);
+
+  }
+}
