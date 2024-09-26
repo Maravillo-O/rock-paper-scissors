@@ -45,3 +45,11 @@ body {
   padding: 10px 15px;
   cursor: pointer;
 }
+
+.autoplayBtn {
+  background-color: white;
+  border: none;
+  font-size: 15px;
+  padding: 10px 15px;
+  cursor: pointer;
+}

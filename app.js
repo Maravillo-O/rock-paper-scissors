@@ -86,3 +86,29 @@ function pickComputerMove() {
 
   return computerMove;
 }
+
+let isAutoPlaying = false;
+let intervalId;
+
+//const autoPlay = () => {
+
+//};
+function autoPlay() {
+  //Si 'isAutoPlaying' es diferente de false
+  if (!isAutoPlaying) {
+    /*intervalId guarda cada vez que se ejecuta 
+    la función setInterval regresa un número que podemos  usar como id
+    el cual guardaremos en intervalId*/
+    intervalId = setInterval(() => {
+      const playerMove = pickComputerMove();
+      playGame(playerMove);
+    }, 1000);
+    //Sí isAutoPlayin diferente de false, lo transformamos a true
+    isAutoPlaying = true;
+    //si es otra cosa que no sea diferente de false entonces...
+  } else {
+    /*Utilizamos clearInterval() utilizando de parametro el intervalId para detener*/
+    clearInterval(intervalId);
+    isAutoPlaying = false;
+  }
+}
